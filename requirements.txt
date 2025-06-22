@@ -1,0 +1,6 @@
+streamlit>=1.35.0
+numpy
+scipy
+pandas
+matplotlib
+io
