@@ -26,7 +26,7 @@ def executar_sird_duplo():
 
         # Parâmetros da população B
         st.header('Parâmetros da População B')
-        N_B = st.number_input('População Total', 100, 1_000_000_000, 5000, key='N_B')
+        N_B = st.number_input('População Total', 100, 1_000_000_000, 10_000, key='N_B')
         I0_B = st.number_input('Infectados Iniciais', 0, N_B, 10, key='I0_B')
         beta_B = st.slider(r'Taxa de transmissão ($\beta$)', 0.0, 1.0, 0.3, 0.01, key='beta_B')
         gamma_B = st.slider(f'Taxa de recuperação ($\gamma$)', 0.0, 1.0, 0.1, 0.01, key='gamma_B')
@@ -198,7 +198,6 @@ def executar_sird_duplo():
         st.markdown('### População A')
         st.metric('Suscetíveis', int(S_A[-1]))
         st.metric('Infectados', int(I_A[-1]))
-        print(I_A)
         st.metric('Recuperados', int(R_A[-1]))
         st.metric('Mortos', int(D_A[-1]))
 
