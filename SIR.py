@@ -16,7 +16,7 @@ def executar_sir():
     # Exibe a barra lateral e os seus elementos
     with st.sidebar:
         # Definição dos parâmetros
-        N = st.number_input(f'População Total ($N$)', 100, 10_000_000_000, 1000)
+        N = st.number_input(f'População Total ($N$)', 100, 10_000_000_000, 10_000)
         I0 = st.number_input(f'Infectados iniciais ($I_0$)', 1, 10_000_000_000, 1)
         R0 = 0
         S0 = N - I0 - R0
