@@ -101,7 +101,7 @@ def executar_sird_vital():
     if mostrar_R:
         ax.plot(t, R, 'g', label='Recuperados')
     if mostrar_D:
-        ax.plot(t, D, 'y', label='Falecidos')
+        ax.plot(t, D, 'k', label='Falecidos')
 
     # Configurações do gráfico
     ax.set_title('Evolução da Epidemia - Modelo SIRD com Dinâmica Vital')
