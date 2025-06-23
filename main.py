@@ -6,7 +6,7 @@ from SIRD_vital import executar_sird_vital
 
 
 # Título geral
-st.set_page_config(page_title='Modelos Epidemiológicos')
+st.set_page_config(page_title='Modelos Epidemiológicos', initial_sidebar_state='expanded')
 st.title('Simulador de Modelos Epidemiológicos')
 
 # Configurações em CSS para estilização da página
