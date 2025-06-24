@@ -1,4 +1,5 @@
 ![Imagem Ilum](Imagens/header_ilum_leticia.png)
+![Imagem Ilum](Imagens/logo.png)
 
 <h1 align="center">Modelagem Epidemiológica SIR e Extensões</h1>
 
