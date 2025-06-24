@@ -27,7 +27,7 @@ def executar_sird_vital():
         gamma = st.slider(f'Taxa de recuperação ($\gamma$)', 0.0, 1.0, 0.1, 0.01)
         delta = st.slider('Taxa de natalidade/mortalidade natural(δ)', 0.0, 1.0, 0.01, 0.01)
         mu = st.slider(f'Taxa de mortalidade ($\mu$)', 0.0, 1.0, 0.01, 0.01)
-        dias = st.slider('Dias de simulação', 1, 36, 160, 1)
+        dias = st.slider('Dias de simulação', 1, 36, 100, 1)
 
         # Seleção das curvas exibidas no gráfico
         st.subheader('Curvas exibidas:')
