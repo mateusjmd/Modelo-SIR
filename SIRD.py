@@ -27,7 +27,7 @@ def executar_sird():
         beta = st.slider(r'Taxa de transmissão ($\beta$)', 0.0, 1.0, 0.3, 0.01)
         gamma = st.slider(f'Taxa de recuperação ($\gamma$)', 0.0, 1.0, 0.1, 0.01)
         mu = st.slider(f'Taxa de mortalidade ($\mu$)', 0.0, 1.0, 0.01, 0.01)
-        dias = st.slider('Dias de simulação', 1, 365, 160, 1)
+        dias = st.slider('Dias de simulação', 1, 365, 100, 1)
 
         # Seleção das curvas exibidas no gráfico
         st.subheader('Curvas exibidas')
