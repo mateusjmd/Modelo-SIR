@@ -17,7 +17,7 @@ def executar_sir():
     with st.sidebar:
         # Definição dos parâmetros
         N = st.number_input(f'População Total ($N$)', 100, 10_000_000_000, 10_000)
-        I0 = st.number_input(f'Infectados iniciais ($I_0$)', 1, 10_000_000_000, 1)
+        I0 = st.number_input(f'Infectados iniciais ($I_0$)', 1, 10_000_000_000, 100)
         R0 = 0
         S0 = N - I0 - R0
         beta = st.slider(r'Taxa de Transmissão ($\beta$)', 0.0, 1.0, 0.3, 0.01)
