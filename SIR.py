@@ -17,12 +17,12 @@ def executar_sir():
     with st.sidebar:
         # Definição dos parâmetros
         N = st.number_input(f'População Total ($N$)', 100, 10_000_000_000, 10_000)
-        I0 = st.number_input(f'Infectados iniciais ($I_0$)', 1, 10_000_000_000, 1)
+        I0 = st.number_input(f'Infectados iniciais ($I_0$)', 1, 10_000_000_000, 100)
         R0 = 0
         S0 = N - I0 - R0
         beta = st.slider(r'Taxa de Transmissão ($\beta$)', 0.0, 1.0, 0.3, 0.01)
         gamma = st.slider(f'Taxa de Recuperação ($\gamma$)', 0.0, 1.0, 0.1, 0.01)
-        dias = st.slider('Dias de simulação', 1, 365, 100)
+        dias = st.slider('Dias de simulação', 1, 365, 100, 1)
 
         # Seleção das curvas exibidas no gráfico
         st.subheader('Curvas exibidas:')
@@ -68,7 +68,6 @@ def executar_sir():
     if mostrar_R:
         ax.plot(t, R, 'g', label='Recuperados')
 
-    # Configurações do gráfico
     ax.set_title('Modelo SIR')
     ax.set_xlabel('Dias')
     ax.set_ylabel('Número de Indivíduos')

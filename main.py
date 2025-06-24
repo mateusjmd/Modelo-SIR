@@ -10,30 +10,37 @@ st.set_page_config(page_title='Modelos Epidemiológicos', initial_sidebar_state=
 st.title('Simulador de Modelos Epidemiológicos')
 
 # Configurações em CSS para estilização da página
-centered_title = """
+page_bg_style = """
 <style>
+/* Centralizar o título */
 h1 {
     text-align: center;
+    font-weight: 700;
+}
+
+/* Header transparente */
+[data-testid="stHeader"] {
+    background-color: rgba(0,0,0,0);  /* mantém compatível com dark */
+}
+
+/* Sidebar com leve opacidade */
+[data-testid="stSidebar"] {
+    background-color: rgba(30,30,30,0.95);
+}
+
+/* Caixa principal com padding e background com gradiente suave */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A237E 100%);
+    min-height: 100vh;
+}
+
+/* Conteúdo principal com padding */
+[data-testid="stAppViewContainer"] > .main {
+    padding: 2rem 4rem;
 }
 </style>
 """
-
-page_bg_img = """
-<style>
-[data-testid='stHeader'] {
-background-color: transparent;
-}
-
-<style>
-h1 {
-    text-align: center;
-}
-</style>
-"""
-
-# Ativa as alterações em CSS do dashboard
-st.markdown(centered_title, unsafe_allow_html=True)
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(page_bg_style, unsafe_allow_html=True)
 
 # Interface inicial com dropdown
 modelos = ['Selecione um modelo',
@@ -51,17 +58,17 @@ match modelo_selecionado:
 
         with col1:
             st.subheader('Desenvolvedores')
-            st.markdown('[Giovani Massayuki Miranda Nagano](https://github.com/giovaninagano5)')
-            st.markdown('[Letícia Nunes de Souza Andrade](https://github.com/LeticiaNunesAndrade)')
-            st.markdown('[Lília Helena Gavazza Pessoa](https://github.com/LiliaGavazza)')
-            st.markdown('[Mateus de Jesus Mendes](https://github.com/mateusjmd)')
+            st.markdown('[Giovani M. M. Nagano](https://github.com/giovaninagano5)')
+            st.markdown('[Letícia N. S. Andrade](https://github.com/LeticiaNunesAndrade)')
+            st.markdown('[Lília H. G. Pessoa](https://github.com/LiliaGavazza)')
+            st.markdown('[Mateus J. Mendes](https://github.com/mateusjmd)')
 
         with col2:
             st.subheader('Orientadores')
-            st.markdown('[Daniel Roberto Cassar](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4262774J5)')
-            st.markdown('[James Moraes de Almeida](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4710448J1)')
-            st.markdown('[Leandro Nascimento Lemos](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4278041J7)')
-            st.markdown('[Vinícius Francisco Wasques](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4355089T5)')
+            st.markdown('[Daniel R. Cassar](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4262774J5)')
+            st.markdown('[James M. Almeida](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4710448J1)')
+            st.markdown('[Leandro N. Lemos](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4278041J7)')
+            st.markdown('[Vinícius F. Wasques](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4355089T5)')
     
     case 'SIR':
         # Executa o modelo SIR
