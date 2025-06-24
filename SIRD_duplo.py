@@ -36,7 +36,7 @@ def executar_sird_duplo():
         st.header('Interação e Duração')
         k_AB = st.slider('Fator de Transmissão de A → B', 0.0, 1.0, 0.05, 0.01)
         k_BA = st.slider('Fator de Transmissão de B → A', 0.0, 1.0, 0.05, 0.01)
-        dias = st.slider('Dias de simulação', 1, 365, 100)
+        dias = st.slider('Dias de simulação', 1, 365, 100, 1)
 
         # Seleção das curvas exibidas no gráfico
         st.header('Curvas Exibidas')
