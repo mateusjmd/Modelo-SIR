@@ -1,16 +1,20 @@
-![Imagem Ilum](Imagens/header_ilum_leticia.png)
+![Imagem Ilum](Demais-Arquivos/Imagens/header_ilum_leticia.png)
 
 <h1 align="center">Modelagem Epidemiológica SIR e Extensões</h1>
 
-![Imagem Ilum](Imagens/logo.png)
+![Imagem Ilum](Demais-Arquivos/Imagens/logo.png)
 
 
 Este repositório contém o código-fonte e a interface interativa do nosso projeto de modelagem epidemiológica, desenvolvido como prática de ciência de dados.
 
 A proposta é permitir que o usuário explore a dinâmica de propagação de doenças infecciosas através de diferentes versões do modelo SIR, variando parâmetros como transmissão, recuperação, mortalidade, interação entre populações e dinâmica populacional.
 
+
 ## Relatório completo
-O relatório detalhado do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório.
+O relatório detalhado do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório e através do [link](
+
+## Acesso ao Epimodel's
+O acesso ao simulador desenvolvido está disponível através do link [Epimodel's Simulador](https://modelo-sir.streamlit.app/).
 
 ## Principais Funcionalidades do Projeto
 - Simulação de quatro diferentes modelos epidemiológicos (SIR, SIRD, SIRD com Dupla População, e SIRD com Dinâmica Vital).
@@ -33,31 +37,25 @@ O relatório detalhado do projeto, incluindo explicações teóricas, fundamento
 ## Contribuidores
 - Giovani Massayuki Miranda Nagano
 - Letícia Nunes de Souza Andrade
-- Lília Helena Gavazzza Pessoa
+- Lília Helena Gavazza Pessoa
 - Mateus de Jesus Mendes
 
 ## Professores
-![image](https://github.com/user-attachments/assets/a2c4a8d6-bdc3-493a-87dd-5b15ef9b7592)
+
 ### Daniel Roberto Cassar
 Doutorado: Ciência e Engenharia de Materiais (UFSCar) – Pós-doutorado: UFSCar. Área de atuação: Informática de materiais
 
 
-
-![image](https://github.com/user-attachments/assets/3ce04fe4-4edd-4727-b490-8252cdc9d509)
 
 ### James Moraes de Almeida
 Doutorado: Nanociências e Materiais Avançados (UFABC). Pós-Doutorado: UFABC, Ecole Polytechnique Fédérale de Lausanne, USP. Área de atuação: Computação de alto desempenho
 
 
 
-![image](https://github.com/user-attachments/assets/a330ce63-cf04-4ac1-96b5-03e151f18f49)
-
 ### Leandro Nascimento Lemos
 Doutorado: Bioinformática e Ecologia de Microrganismos (USP). Pós-Doutorado: Laboratório Nacional de Computação Científica (LNCC), Unicamp e Universidade de Viena. Área de Atuação: Bioinformática e Ecologia Numérica.
 
 
-
-![image](https://github.com/user-attachments/assets/ee394f2c-8b76-4af1-9a5d-d118bcbfe0d2)
 ### Vinícius Francisco Wasques
 Doutorado: Matemática Aplicada (Unicamp). Área de atuação: Equações Diferenciais, Teoria de Conjuntos Fuzzy e Biomatemática.
 
