@@ -68,7 +68,6 @@ def executar_sir():
     if mostrar_R:
         ax.plot(t, R, 'g', label='Recuperados')
 
-    # Configurações do gráfico
     ax.set_title('Modelo SIR')
     ax.set_xlabel('Dias')
     ax.set_ylabel('Número de Indivíduos')
