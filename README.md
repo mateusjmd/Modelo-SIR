@@ -1,8 +1,8 @@
-![Imagem Ilum](Imagens/header_ilum_leticia.png)
+![Imagem Ilum](Demais-Arquivos/Imagens/header_ilum_leticia.png)
 
 <h1 align="center">Modelagem Epidemiológica SIR e Extensões</h1>
 
-![Imagem Ilum](Imagens/logo.png)
+![Imagem Ilum](Demais-Arquivos/Imagens/logo.png)
 
 
 Este repositório contém o código-fonte e a interface interativa do nosso projeto de modelagem epidemiológica, desenvolvido como prática de ciência de dados.
