@@ -33,7 +33,7 @@ O relatório detalhado do projeto, incluindo explicações teóricas, fundamento
 ## Contribuidores
 - Giovani Massayuki Miranda Nagano
 - Letícia Nunes de Souza Andrade
-- Lília Helena Gavazzza Pessoa
+- Lília Helena Gavazza Pessoa
 - Mateus de Jesus Mendes
 
 ## Professores
