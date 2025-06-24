@@ -22,7 +22,7 @@ def executar_sir():
         S0 = N - I0 - R0
         beta = st.slider(r'Taxa de Transmissão ($\beta$)', 0.0, 1.0, 0.3, 0.01)
         gamma = st.slider(f'Taxa de Recuperação ($\gamma$)', 0.0, 1.0, 0.1, 0.01)
-        dias = st.slider('Dias de simulação', 1, 365, 100)
+        dias = st.slider('Dias de simulação', 1, 365, 100, 1)
 
         # Seleção das curvas exibidas no gráfico
         st.subheader('Curvas exibidas:')
