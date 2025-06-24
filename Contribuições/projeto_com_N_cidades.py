@@ -42,14 +42,24 @@ def obter_dados_varias_cidades():
     return cidades, parametros, mobilidade, beta, gamma
 
 def simulador_sir(cidades, parametros, mobilidade, beta, gamma, dias):
+    """Essa função inicializa os estados para cada cidade. Para cada dia de simulação:
+    01.Calcula infectados importados de outras cidades
+    02.Aplica o modelo SIR tradicional
+    03.Atualiza os compartimentos S, I, R
+    04.Armazena os resultados diários
+    Retorna toda a evolução temporal"""
+
+    #cria dicionário vazio para armazenar dados da simulação
     resultados = {}
  
+    #Para cada cidade, extrai os valores iniciais e calcula a população total.
     for cidade in cidades:
         S = parametros[cidade]["S"]
         I = parametros[cidade]["I"]
         R = parametros[cidade]["R"]
         N = S + I + R
  
+    #Cria estruturas para armazenar a evolução dos compartimentos S, I, R ao longo do tempo.
         historico = {
             "S": [S],
             "I": [I],
@@ -63,6 +73,7 @@ def simulador_sir(cidades, parametros, mobilidade, beta, gamma, dias):
             "N": N
         }
  
+    #Inicia o loop principal que simula cada dia, criando um dicionário temporário para os novos valores.
     for t in range(dias):
         novos_parametros = {}
  
@@ -73,31 +84,43 @@ def simulador_sir(cidades, parametros, mobilidade, beta, gamma, dias):
             N = resultados[cidade]["N"]
  
           
-            importados = 0
-            for origem in cidades:
-                if origem != cidade:
-                    viajantes = mobilidade.get((origem, cidade), 0)
-                    I_origem = resultados[origem]["I"][-1]
-                    N_origem = resultados[origem]["N"]
-                    if N_origem > 0:
-                        prop_inf = I_origem / N_origem
-                        importados += viajantes * prop_inf
+    """Calcula infectados que chegam de outras cidades:
+    01.Para cada cidade de origem diferente
+    02.Obtém número de viajantes da matriz de mobilidade
+    03.Calcula proporção de infectados na cidade de origem
+    04.Adiciona ao contador de importados"""
+
+    importados = 0
+    for origem in cidades:
+        if origem != cidade:
+            viajantes = mobilidade.get((origem, cidade), 0)
+            I_origem = resultados[origem]["I"][-1]
+            N_origem = resultados[origem]["N"]
+            if N_origem > 0:
+                prop_inf = I_origem / N_origem
+                importados += viajantes * prop_inf
  
+    #Define as fórmulas da dinâmica SIR básica
             novos_infectados = beta * S * I / N
             novos_recuperados = gamma * I
  
-            S_novo = S - novos_infectados
-            I_novo = I + novos_infectados - novos_recuperados + importados
-            R_novo = R + novos_recuperados
+    """Atualiza os valores para o próximo dia, considerando:
+    01.Suscetíveis diminuem pelos novos infectados
+    02.Infectados recebem novos casos e subtraem recuperados, mais importados
+    03.Recuperados aumentam com os novos recuperados"""
+
+    S_novo = S - novos_infectados
+    I_novo = I + novos_infectados - novos_recuperados + importados
+    R_novo = R + novos_recuperados
  
-            novos_parametros[cidade] = (S_novo, I_novo, R_novo)
+    novos_parametros[cidade] = (S_novo, I_novo, R_novo)
  
-        # Atualiza os dados após o dia
-        for cidade in cidades:
-            S_novo, I_novo, R_novo = novos_parametros[cidade]
-            resultados[cidade]["S"].append(S_novo)
-            resultados[cidade]["I"].append(I_novo)
-            resultados[cidade]["R"].append(R_novo)
+    # Atualiza os dados após o dia
+    for cidade in cidades:
+        S_novo, I_novo, R_novo = novos_parametros[cidade]
+        resultados[cidade]["S"].append(S_novo)
+        resultados[cidade]["I"].append(I_novo)
+        resultados[cidade]["R"].append(R_novo)
  
     return resultados
 
