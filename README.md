@@ -11,10 +11,13 @@ A proposta é permitir que o usuário explore a dinâmica de propagação de doe
 
 
 ## Relatório completo
-O relatório detalhado do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório e através do [Relatório]()
+As informações detalhadas do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório e através do [link](
 
 ## Acesso ao Epimodel's
 O acesso ao simulador desenvolvido está disponível através do link [Epimodel's Simulador](https://modelo-sir.streamlit.app/).
+
+## Demonstração
+Veja a demonstração de como usar as funcionalidades da aplicação: [Demonstração](https://github.com/mateusjmd/Modelo-SIR/issues/3#issue-3173945408)
 
 ## Principais Funcionalidades do Projeto
 - Simulação de quatro diferentes modelos epidemiológicos (SIR, SIRD, SIRD com Dupla População, e SIRD com Dinâmica Vital).
