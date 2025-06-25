@@ -10,8 +10,8 @@ Este repositório contém o código-fonte e a interface interativa do nosso proj
 A proposta é permitir que o usuário explore a dinâmica de propagação de doenças infecciosas através de diferentes versões do modelo SIR, variando parâmetros como transmissão, recuperação, mortalidade, interação entre populações e dinâmica populacional.
 
 
-## Relatório completo
-As informações detalhadas do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório e através do [link](
+## Documentação completa
+As informações detalhadas do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório no [Relatório-Documentação](https://github.com/mateusjmd/Modelo-SIR/blob/main/Demais-Arquivos/Documenta%C3%A7%C3%A3o%20-%20Epimodel's.pdf).
 
 ## Acesso ao Epimodel's
 O acesso ao simulador desenvolvido está disponível através do link [Epimodel's Simulador](https://modelo-sir.streamlit.app/).
