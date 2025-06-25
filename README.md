@@ -65,8 +65,12 @@ Doutorado: Matemática Aplicada (Unicamp). Área de atuação: Equações Difere
 
 
 ## Referências
-TAVARES, João Nuno. Modelo SIR em epidemiologia. Revista de Ciência Elementar, v. 5, n. 2, 2017. Disponível em: https://rce.casadasciencias.org/rceapp/static/docs/artigos/2017-020.pdf. Acesso em: junho de 2025.
+Analytics Vidhya. Mathematical Modelling: Modelling the Spread of Diseases with SIRD Model. Disponível em: https://www.analyticsvidhya.com/blog/2021/08/mathematical-modelling-modelling-the-spread-of-diseases-with-sird-model/. Acesso em: junho de 2025.
+
+ARINO, J.; VAN DEN DRIESSCHE, P. A multi-city epidemic model. Mathematical Population Studies, Philadelphia, v. 10, n. 3, p. 175–193, 2003. DOI: 10.1080/08898480390200962.
+
+HETHCOTE, Herbert W. The mathematics of infectious diseases. SIAM Review, Philadelphia, v. 42, n. 4, p. 599–653, 2000. DOI: 10.1137/S0036144500371907.
 
 Scientific Python. Epidemic Model – SIR. Disponível em: https://scientific-python.readthedocs.io/en/latest/notebooks_rst/3_Ordinary_Differential_Equations/02_Examples/Epidemic_model_SIR.html. Acesso em: junho de 2025.
- 
-Analytics Vidhya. Mathematical Modelling: Modelling the Spread of Diseases with SIRD Model. Disponível em: https://www.analyticsvidhya.com/blog/2021/08/mathematical-modelling-modelling-the-spread-of-diseases-with-sird-model/. Acesso em: junho de 2025.
+
+TAVARES, João Nuno. Modelo SIR em epidemiologia. Revista de Ciência Elementar, v. 5, n. 2, 2017. Disponível em: https://rce.casadasciencias.org/rceapp/static/docs/artigos/2017-020.pdf. Acesso em: junho de 2025.
