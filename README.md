@@ -11,7 +11,7 @@ A proposta é permitir que o usuário explore a dinâmica de propagação de doe
 
 
 ## Relatório completo
-O relatório detalhado do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório e através do [link](
+O relatório detalhado do projeto, incluindo explicações teóricas, fundamentos matemáticos, análise dos resultados e discussões sobre as extensões futuras, está disponível no repositório e através do [Relatório]()
 
 ## Acesso ao Epimodel's
 O acesso ao simulador desenvolvido está disponível através do link [Epimodel's Simulador](https://modelo-sir.streamlit.app/).
